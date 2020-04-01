@@ -1,0 +1,6 @@
+﻿  SceneManager.cpp
+  TCPClient.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
+C:\Users\KDK\Desktop\ServerProgramming\ServerProgramming\SceneManager.cpp(108,2): warning C4060:  switch문에 'case' 또는 'default' 레이블이 없습니다.
+  ServerProgramming.vcxproj -> C:\Users\KDK\Desktop\ServerProgramming\Debug\ServerProgramming.exe
