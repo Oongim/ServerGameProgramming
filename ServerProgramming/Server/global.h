@@ -99,6 +99,7 @@ struct SOCKETINFO         //클라이언트 들의 정보 클라와 네트워크로 데이터를 주고
 
 	KeyInput key;
 	char NumOfClient;
+	CharacterStatus stat;
 };
 ///////////////////////////////////
 void err_quit(char* msg)

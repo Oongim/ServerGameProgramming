@@ -106,7 +106,7 @@ int TCPClient::PlaySceneRecvData(std::vector<CharacterStatus>& data)
 	data.reserve(clientNum);
 
 	CharacterStatus recvData;
-	for (int i = 0; i < clientNum; ++i) {
+	//for (int i = 0; i < clientNum; ++i) {
 		recv(sock, (char*)& recvData, sizeof(recvData), 0);
 		if (retval == SOCKET_ERROR) {
 			err_display("recv()");
@@ -118,7 +118,7 @@ int TCPClient::PlaySceneRecvData(std::vector<CharacterStatus>& data)
 		}
 
 		data.emplace_back(recvData);
-	}
+	//}
 
 	return retval;
 }

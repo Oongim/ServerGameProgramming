@@ -25,8 +25,6 @@ void SceneManager::Update(float time)
 	m_client->PlaySceneSendData(m_key);
 	m_client->PlaySceneRecvData(m_players);
 
-	
-
 	isPressedKey = false;
 	m_key.Up = false;
 	m_key.Down = false;
