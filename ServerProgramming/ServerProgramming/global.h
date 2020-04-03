@@ -16,7 +16,7 @@
 #define SIZE_OF_ONE_CHESS_SQUARE 70.f
 #define NUM_OF_CHESSBOARDLINE 8.f
 
-#define MAX_PLAYER 3
+#define MAX_PLAYER 10
 /********************************************************************************************/
 
 #pragma pack(1)
@@ -72,6 +72,13 @@ struct CharacterStatus
 	char whoseControlNum;
 };
 #pragma pack()
+#pragma pack(1)
+struct PACKET         //클라이언트 들의 정보 클라와 네트워크로 데이터를 주고 받을때 필요한 부가자료들 
+{
+	CharacterStatus stats[MAX_PLAYER];
+	char NumOfClient;
+};
+#pragma pack()
 
 template<class T>
 inline const T& clamp(const T& var, const T& low, const T& high)
@@ -81,3 +88,4 @@ inline const T& clamp(const T& var, const T& low, const T& high)
 	else if (var >= high)return high;
 	else return var;
 }
+

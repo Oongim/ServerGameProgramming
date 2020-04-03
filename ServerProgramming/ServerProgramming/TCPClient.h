@@ -30,6 +30,6 @@ public:
 
 	int PlaySceneSendData(KeyInput&);
 
-	int PlaySceneRecvData(std::vector<CharacterStatus>& data);
+	int PlaySceneRecvData(PACKET& data);
 
 };

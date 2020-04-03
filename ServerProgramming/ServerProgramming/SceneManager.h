@@ -9,7 +9,7 @@ private:
 
 	class TextureManager* s_Resource;
 	class ChessPieces* Chess_King;
-	std::vector<CharacterStatus> m_players;
+	PACKET m_players;
 	int Chess_Board = -1;
 
 	GLdouble WorldRotate[16]

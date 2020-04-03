@@ -87,10 +87,10 @@ int TCPClient::PlaySceneSendData(KeyInput& data)
 	}
 	return 1;
 }
-int TCPClient::PlaySceneRecvData(std::vector<CharacterStatus>& data)
+int TCPClient::PlaySceneRecvData(PACKET& data)
 {
 	int retval;
-	char clientNum;
+	/*char clientNum;
 	retval = recvn(sock, (char*)& clientNum, sizeof(char), 0);
 	if (retval == SOCKET_ERROR) {
 		err_display("recv()");
@@ -100,14 +100,11 @@ int TCPClient::PlaySceneRecvData(std::vector<CharacterStatus>& data)
 	{
 		retval = 1;
 	}
-	std::cout << "clientNum : " << (int)clientNum << std::endl;
+	std::cout << "clientNum : " << (int)clientNum << std::endl;*/
 
-	data.clear();
-	data.reserve(clientNum);
-
-	CharacterStatus recvData;
-	//for (int i = 0; i < clientNum; ++i) {
-		recv(sock, (char*)& recvData, sizeof(recvData), 0);
+//	CharacterStatus recvData;
+//	for (int i = 0; i < clientNum; ++i) {
+	retval=recv(sock, (char*)& data, sizeof(data), 0);
 		if (retval == SOCKET_ERROR) {
 			err_display("recv()");
 			return 0;
@@ -117,8 +114,7 @@ int TCPClient::PlaySceneRecvData(std::vector<CharacterStatus>& data)
 			retval = 1;
 		}
 
-		data.emplace_back(recvData);
-	//}
+//	}
 
 	return retval;
 }
