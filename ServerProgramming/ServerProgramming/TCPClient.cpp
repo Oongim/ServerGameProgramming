@@ -49,31 +49,6 @@ int TCPClient::recvn(SOCKET s, char* buf, int len, int flags)
 
 	return (len - left);
 }
-//////////////Title Scene//////////////////////////////////////
-//int TCPClient::TitleSceneSendData(unsigned char msg)
-//{
-//	int retval;
-//	retval = send(sock, (char*)& msg, sizeof(msg), 0);
-//	if (retval == SOCKET_ERROR) {
-//		err_display("send()");
-//		return 0;
-//	}
-//	return 1;
-//}
-//
-//int TCPClient::TitleSceneRecvData(unsigned char& msg)
-//{
-//	int retval;
-//	retval = recv(sock, (char*)& msg, sizeof(msg), 0);
-//	if (retval == SOCKET_ERROR) {
-//		err_display("recv()");
-//		return 0;
-//	}
-//	printf("%d\n", msg);
-//
-//	return 1;
-//}
-///////////////////////////////////////////////////////////////
 
 ////////////Play Scene///////////////////////////////////////
 int TCPClient::PlaySceneSendData(KeyInput& data)
@@ -90,20 +65,7 @@ int TCPClient::PlaySceneSendData(KeyInput& data)
 int TCPClient::PlaySceneRecvData(PACKET& data)
 {
 	int retval;
-	/*char clientNum;
-	retval = recvn(sock, (char*)& clientNum, sizeof(char), 0);
-	if (retval == SOCKET_ERROR) {
-		err_display("recv()");
-		return 0;
-	}
-	else
-	{
-		retval = 1;
-	}
-	std::cout << "clientNum : " << (int)clientNum << std::endl;*/
 
-//	CharacterStatus recvData;
-//	for (int i = 0; i < clientNum; ++i) {
 	retval=recv(sock, (char*)& data, sizeof(data), 0);
 		if (retval == SOCKET_ERROR) {
 			err_display("recv()");
@@ -114,8 +76,7 @@ int TCPClient::PlaySceneRecvData(PACKET& data)
 			retval = 1;
 		}
 
-//	}
-
+		//std::cout << (int)data.NumOfClient << std::endl;
 	return retval;
 }
 //////////////////////////////////////////////////////////////
@@ -152,6 +113,7 @@ TCPClient::TCPClient()
 
 TCPClient::~TCPClient()
 {
+	printf("서버 접속 종료\n");
 	// closesocket()
 	closesocket(sock);
 

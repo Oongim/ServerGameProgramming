@@ -4,7 +4,6 @@ map <SOCKET, SOCKETINFO> clients;	//소켓 사용하는거 바람직하지 않음, 소켓 번호가
 PACKET sendPack;
 
 void CALLBACK Key_recv_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED overlapped, DWORD lnFlags);
-void CALLBACK ClientNum_send_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED overlapped, DWORD lnFlags);
 void CALLBACK Stat_send_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED overlapped, DWORD lnFlags);
 void Update(KeyInput& key, CharacterStatus& stat, int id);
 
@@ -13,41 +12,23 @@ void CALLBACK Key_recv_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED ov
 	SOCKET client_s = reinterpret_cast<int>(overlapped->hEvent);
 	if (dataBytes == 0)				//소켓이 close했다는 의미이니 나도 close 하자, error코드 처리도 추가 해줘야 함 나중에
 	{
+		sendPack.stats[clients[client_s].player_id].position = { 0.f,0.f,0.f };
+		sendPack.NumOfClient--;
+
 		closesocket(clients[client_s].socket);
 		clients.erase(client_s);		//지워서 끝
 		return;
 	}  // 클라이언트가 closesocket을 했을 경우
 
 
-	cout << "From client : " << clients[client_s].key.Up<< clients[client_s].key.Down<< clients[client_s].key.Right<<clients[client_s].key.Left << " (" << dataBytes << ") bytes)\n"; //이 메세지가 왔다.
-	//clients[client_s].dataBuffer[0].len = dataBytes;	//데이타 버퍼 길이 세팅 보내온 양 만큼 그대로 보내야 함, 버퍼 사이즈로 하면 너무 많이 보냄
+	//cout << "From client : " << clients[client_s].key.Up<< clients[client_s].key.Down<< clients[client_s].key.Right<<clients[client_s].key.Left << " (" << dataBytes << ") bytes)\n"; //이 메세지가 왔다.
+	cout << "Client Num:" << sendPack.NumOfClient<< " (" << dataBytes << ") bytes\n";
 	memset(&(clients[client_s].overlapped), 0, sizeof(WSAOVERLAPPED));	//0으로 초기화해서 재사용
 	clients[client_s].overlapped.hEvent = (HANDLE)client_s;				//이거도 초기화 되니 다시 소켓 설정
 
 	Update(clients[client_s].key, sendPack.stats[clients[client_s].player_id], clients[client_s].player_id);
 
-	//WSASend(client_s, &(clients[client_s].dataBuffer[1]), 1, NULL, 0, &(clients[client_s].overlapped), ClientNum_send_callback);
 	WSASend(client_s, &(clients[client_s].dataBuffer[1]), 1, NULL, 0, &(clients[client_s].overlapped), Stat_send_callback); //send
-}
-
-void CALLBACK ClientNum_send_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED overlapped, DWORD lnFlags)
-{//send가 종료됬으니 다시 recv해줘야 함
-	DWORD receiveBytes = 0;
-	DWORD flags = 0;
-
-	SOCKET client_s = reinterpret_cast<int>(overlapped->hEvent);
-
-	if (dataBytes == 0) {
-		closesocket(clients[client_s].socket);
-		clients.erase(client_s);
-		return;
-	}  // 클라이언트가 closesocket을 했을 경우
-	memset(&(clients[client_s].overlapped), 0, sizeof(WSAOVERLAPPED));				//초기화
-	clients[client_s].overlapped.hEvent = (HANDLE)client_s;							//소켓 넣어줌
-
-	cout << "TRACE - Send message : " << (int)sendPack.NumOfClient << " (" << dataBytes << " bytes)\n";	//이거 보냄
-
-	WSASend(client_s, &(clients[client_s].dataBuffer[2]), 1, NULL, 0, &(clients[client_s].overlapped), Stat_send_callback); //send
 }
 
 void CALLBACK Stat_send_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED overlapped, DWORD lnFlags)
@@ -58,12 +39,15 @@ void CALLBACK Stat_send_callback(DWORD Error, DWORD dataBytes, LPWSAOVERLAPPED o
 	SOCKET client_s = reinterpret_cast<int>(overlapped->hEvent);
 
 	if (dataBytes == 0) {
+		sendPack.stats[clients[client_s].player_id].position = { 0.f,0.f,0.f };
+		sendPack.NumOfClient--;
+
 		closesocket(clients[client_s].socket);
 		clients.erase(client_s);
 		return;
 	}  // 클라이언트가 closesocket을 했을 경우
 
-	cout << "TRACE - Send message : " << sendPack.stats[clients[client_s].player_id].position.x << "," << sendPack.stats[clients[client_s].player_id].position.y << " (" << dataBytes << " bytes)\n";	//이거 보냄
+	//cout << "TRACE - Send message : " << sendPack.stats[clients[client_s].player_id].position.x << "," << sendPack.stats[clients[client_s].player_id].position.y << " (" << dataBytes << " bytes)\n";	//이거 보냄
 	memset(&(clients[client_s].overlapped), 0, sizeof(WSAOVERLAPPED));				//초기화
 	clients[client_s].overlapped.hEvent = (HANDLE)client_s;							//소켓 넣어줌
 
@@ -101,8 +85,10 @@ int main()
 	int addrLen = sizeof(SOCKADDR_IN);
 	memset(&clientAddr, 0, addrLen);
 
-	int index=0;
+	
 	while (true) {														//계속 accept해야함
+		if (sendPack.NumOfClient == 10)continue;
+
 		cout << "accept() 중\n";
 		SOCKET clientSocket = accept(listenSocket, (struct sockaddr*) & clientAddr, &addrLen);
 		if (clientSocket == INVALID_SOCKET)
@@ -119,16 +105,24 @@ int main()
 		clients[clientSocket].dataBuffer[1].len = sizeof(PACKET);
 		clients[clientSocket].dataBuffer[1].buf = (char*)& sendPack;
 
-		clients[clientSocket].player_id = index;
-		sendPack.stats[index].position = { 0.5,0.5,0.f };
-		index++;
-		sendPack.NumOfClient = index;
+		for (int i = 0; i < MAX_PLAYER; ++i)
+		{
+			if (sendPack.stats[i].position.x == 0.f)
+			{
+				clients[clientSocket].player_id = i;
+				sendPack.stats[i].position = { 0.5,0.5,0.f };
+				sendPack.stats[i].whoseControlNum = i;
+
+				sendPack.NumOfClient = i;
+
+				sendPack.NumOfClient++;
+				break;
+			}
+		}
+		
 
 		memset(&clients[clientSocket].overlapped, 0, sizeof(WSAOVERLAPPED));			//쓰기 전에 0으로 초기화해줘야 함
 		clients[clientSocket].overlapped.hEvent = (HANDLE)clients[clientSocket].socket;
-		//원래 이렇게 소켓 느라고 만들진 않음, 꼼수 recv부터 해야 하는데 callback함수가 호출됨, callback함수는 정보가 필요하다 어떤 소켓의 recv가 종료되었냐 
-		//콜백 함수는 하나만 두고 여러 소켓이 공유를 한다 어떤 소켓인지 알기 위해 나머지는 세팅할 수가 없고 오버랩드 구조체에 포함할 수 밖에 없다.
-		//오버랩드 구조체에서 나머지는 건들 수 없고 hEvent가 콜백함수니 필요가 없다 무시가 되버리니 여기에 저장하자
 		DWORD flags = 0;
 		WSARecv(clients[clientSocket].socket, &clients[clientSocket].dataBuffer[0], 1, NULL,//null로 하지 않으면 recv하면 즉시 버퍼에 들어갈 수 있다. 그대로 되는데 깔끔해지지 않음
 			&flags, &(clients[clientSocket].overlapped)/*오버랩드 구조체의 주소가 콜백 함수에 넘어감 안에 내용은 운영체제가 알아서 변경*/

@@ -54,14 +54,16 @@ void SceneManager::Render(float time)
 		1.0, 1.0, 1.0, 1.0);
 	glPushMatrix();//=========================
 	{
-		for(int i=0;i<m_players.NumOfClient;++i)
+		for (int i = 0; i < MAX_PLAYER; ++i)
 		{
-			glPushMatrix();//=========================
-			{
-				Chess_King->SetPos(m_players.stats[i].position);
-				Chess_King->Draw();
+			if (m_players.stats[i].position.x != 0.f) {
+				glPushMatrix();//=========================
+				{
+					Chess_King->SetPos(m_players.stats[i].position);
+					Chess_King->Draw();
+				}
+				glPopMatrix();//=========================
 			}
-			glPopMatrix();//=========================
 		}
 	}
 	glPopMatrix();//=========================
