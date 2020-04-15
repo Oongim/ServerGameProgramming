@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\KDK\Desktop\ServerGameProgramming\ServerProgramming\Server\main.cpp(12,60): warning C4311:  'reinterpret_cast': 'HANDLE'에서 'int'(으)로 포인터가 잘립니다.
+C:\Users\KDK\Desktop\ServerGameProgramming\ServerProgramming\Server\main.cpp(12,60): warning C4302:  'reinterpret_cast': 'HANDLE'에서 'int'(으)로 잘립니다.
+C:\Users\KDK\Desktop\ServerGameProgramming\ServerProgramming\Server\main.cpp(39,60): warning C4311:  'reinterpret_cast': 'HANDLE'에서 'int'(으)로 포인터가 잘립니다.
+C:\Users\KDK\Desktop\ServerGameProgramming\ServerProgramming\Server\main.cpp(39,60): warning C4302:  'reinterpret_cast': 'HANDLE'에서 'int'(으)로 잘립니다.
+  Server.vcxproj -> C:\Users\KDK\Desktop\ServerGameProgramming\ServerProgramming\x64\Debug\Server.exe

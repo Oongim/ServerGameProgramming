@@ -1,0 +1,18 @@
+﻿main.obj : error LNK2019: __imp_glutInitWindowPosition 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutInitWindowSize 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutInitDisplayMode 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutMainLoop 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutSwapBuffers 외부 기호(참조 위치: "void __cdecl RenderScene(int)" (?RenderScene@@YAXH@Z) 함수)에서 확인하지 못했습니다.
+SceneManager.obj : error LNK2001: __imp_glutSwapBuffers 외부 기호를 확인할 수 없습니다.
+main.obj : error LNK2019: __imp_glutTimerFunc 외부 기호(참조 위치: "void __cdecl RenderScene(int)" (?RenderScene@@YAXH@Z) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutKeyboardFunc 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutSpecialFunc 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutReshapeFunc 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutDisplayFunc 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutKeyboardUpFunc 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutSpecialUpFunc 외부 기호(참조 위치: main 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp_glutGet 외부 기호(참조 위치: "void __cdecl RenderScene(int)" (?RenderScene@@YAXH@Z) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp___glutInitWithExit 외부 기호(참조 위치: glutInit_ATEXIT_HACK 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp___glutCreateWindowWithExit 외부 기호(참조 위치: glutCreateWindow_ATEXIT_HACK 함수)에서 확인하지 못했습니다.
+.\lib\freeglut.lib : warning LNK4272: 'x86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Users\KDK\Desktop\ServerGameProgramming\ServerProgramming\x64\Debug\ServerProgramming.exe : fatal error LNK1120: 15개의 확인할 수 없는 외부 참조입니다.
