@@ -1,0 +1,94 @@
+﻿  IOCPServer.cpp
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(29,1): warning C4005:  'UNICODE': 매크로 재정의
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(29,1): warning C4005: C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp: note: 'UNICODE'의 이전 정의를 참조하십시오.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(765,72): warning C4244:  '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(765,62): warning C4244:  '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(765,51): warning C4244:  '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(765,39): warning C4244:  '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(765,27): warning C4244:  '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(809,11): warning C4101:  'szUser_name' :참조되지 않은 지역 변수입니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:  '인수': '_Ty'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:             _Ty=wchar_t
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:         and
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2348,23): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :  컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :             _Ty=wchar_t,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :             _Iter=wchar_t *
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :  컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :             _Ty=wchar_t,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :             _Iter=wchar_t *
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2359): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :  컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :             _Ty=wchar_t,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :             _Iter=wchar_t *
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :  컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :             _Ty=wchar_t,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :             _Iter=wchar_t *
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2339): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<_Iter,void>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :             _Iter=wchar_t *,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :             _Alloc=std::allocator<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<_Iter,void>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :             _Iter=wchar_t *,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :             _Alloc=std::allocator<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3173): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2213): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Replace_range<wchar_t*>(const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const _Iter,const _Iter,std::false_type)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2213): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2213): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2213): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2213): message :             _Iter=wchar_t *
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2213): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3193): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Replace_range<wchar_t*>(const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const _Iter,const _Iter,std::false_type)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3193): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3193): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3193): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3193): message :             _Iter=wchar_t *
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(3193): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::replace<_Iter,void>(const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :             _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::replace<_Iter,void>(const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :             _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(2851): message :         ]
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :         with
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :         [
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :             _Elem=wchar_t,
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :             _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :         ]
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :  컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :         with
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :         [
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :             _Elem=wchar_t,
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :             _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(741): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(591): message :  컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::duration<double,std::ratio<1,1>>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(169): message :  컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::duration<__int64,std::nano>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(570): message :  컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>'에 대한 참조를 확인하세요.
+  IOCPGameServer.vcxproj -> C:\Users\KDK\Downloads\GameServer와 Database 연동\DB연동 실습\IOCPGameServer\x64\Debug\IOCPGameServer.exe

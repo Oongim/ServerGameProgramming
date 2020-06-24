@@ -1,0 +1,73 @@
+﻿  IOCPServer.cpp
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(29,1): warning C4005: 'UNICODE': 매크로 재정의
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp : message : 'UNICODE'의 이전 정의를 참조하십시오.
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(754,38): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(754,26): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(785,11): warning C4101: 'szUser_name' :참조되지 않은 지역 변수입니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2388,23): warning C4244: '인수': '_Ty'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=wchar_t
+          ]
+          and
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2399): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=wchar_t,
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2399): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=wchar_t,
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2379): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=wchar_t,
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2379): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<_Ty*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=wchar_t,
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2921): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<wchar_t*,void>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *,
+              _Alloc=std::allocator<char>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2921): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<wchar_t*,void>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(733): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+          ]
+C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(733): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(632): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::duration<double,std::ratio<1,1>>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(178): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::duration<__int64,std::nano>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(610): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>'에 대한 참조를 확인하세요.
+LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+  코드를 생성하고 있습니다.
+  1 of 627 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    5 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  IOCPGameServer.vcxproj -> C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\IOCPGameServer\x64\Release\IOCPGameServer.exe
