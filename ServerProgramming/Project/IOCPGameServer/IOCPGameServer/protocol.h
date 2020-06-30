@@ -12,12 +12,17 @@ constexpr int MAX_STR_LEN = 80;
 
 #define C2S_LOGIN	1
 #define C2S_MOVE	2
+#define C2S_ATTACK  3
+#define C2S_CHAT    4
+#define C2S_LOGOUT  5
 
 #define S2C_LOGIN_OK		1
-#define S2C_MOVE			2
-#define S2C_ENTER			3
-#define S2C_LEAVE			4
-#define S2C_CHAT			5
+#define S2C_LOGIN_FAIL		2
+#define S2C_MOVE			3
+#define S2C_ENTER			4
+#define S2C_LEAVE			5
+#define S2C_CHAT			6
+#define S2C_STAT_CHANGE     7
 
 #pragma pack(push ,1)
 
@@ -29,6 +34,11 @@ struct sc_packet_login_ok {
 	short hp;
 	short level;
 	int	exp;
+};
+
+struct sc_packet_login_fail {
+	char size;
+	char type;
 };
 
 struct sc_packet_move {
@@ -59,16 +69,24 @@ struct sc_packet_leave {
 };
 
 struct sc_packet_chat {
-	char size;
+	unsigned char size;
 	char type;
 	int	 id;
-	char mess[MAX_STR_LEN];
+	wchar_t mess[MAX_STR_LEN];
 };
 
 struct cs_packet_login {
 	char	size;
 	char	type;
 	char	name[MAX_ID_LEN];
+};
+
+struct sc_packet_stat_change {
+	char size;
+	char type;
+	short hp;
+	short level;
+	int	exp;
 };
 
 constexpr unsigned char D_UP = 0;
@@ -83,4 +101,19 @@ struct cs_packet_move {
 	unsigned move_time;
 };
 
+struct cs_packet_attack {
+	char size;
+	char type;
+};
+
+struct cs_packet_chat {
+	unsigned char size;
+	char type;
+	wchar_t message[MAX_STR_LEN];
+};
+
+struct cs_packet_logout {
+	char size;
+	char type;
+};
 #pragma pack (pop)

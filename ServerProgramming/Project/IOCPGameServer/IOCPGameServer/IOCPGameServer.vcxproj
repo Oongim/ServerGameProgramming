@@ -143,6 +143,7 @@
     <ClInclude Include="lua.hpp" />
     <ClInclude Include="luaconf.h" />
     <ClInclude Include="lualib.h" />
+    <ClInclude Include="PathFinder.h" />
     <ClInclude Include="protocol.h" />
   </ItemGroup>
   <ItemGroup>

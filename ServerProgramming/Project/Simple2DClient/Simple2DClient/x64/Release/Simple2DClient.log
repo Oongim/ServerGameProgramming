@@ -1,1 +1,8 @@
-﻿  Simple2DClient.vcxproj -> C:\Users\rkdqm\Downloads\[게임서버프로그래밍]2015182001강동균_LUAScript구현과제\LUA_NPC_실습\Simple2DClient\x64\Release\Simple2DClient.exe
+﻿  2dClient.cpp
+c:\shieldman\servergameprogramming\serverprogramming\project\simple2dclient\simple2dclient\2dclient.cpp(113): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  1 of 691 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  Simple2DClient.vcxproj -> C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\Simple2DClient\x64\Release\Simple2DClient.exe
