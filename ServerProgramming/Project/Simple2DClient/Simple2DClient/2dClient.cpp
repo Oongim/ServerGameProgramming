@@ -57,7 +57,7 @@ void read_map()
 				map_data[i][j] = true;
 				++j;
 
-				printf("%d\n", i);
+				//printf("%d\n", i);
 			}
 		}
 		else if (number == " ")
@@ -78,7 +78,7 @@ void read_map()
 				map_data[i][j] = false;
 				++j;
 
-				printf("%d\n", i);
+				//printf("%d\n", i);
 
 			}
 		}
@@ -97,6 +97,8 @@ public:
 		text.setString(chat);
 		if (id == g_myid)
 			text.setFillColor({210,75,48});
+		else if(id <NPC_ID_START)
+			text.setFillColor({ 100,254,48 });
 		else
 			text.setFillColor({ 190,156,255 });
 		
@@ -420,7 +422,7 @@ void client_main()
 	text.setStyle(sf::Text::Bold);
 	text.setScale({ 1.5,1.5 });
 	char buf[100];
-	sprintf_s(buf, "ID:%s Lv:%d exp:%d \nHP:%d \nPos:(%d, %d)", avatar.name, avatar.m_level, avatar.m_exp, avatar.m_hp, avatar.m_x, avatar.m_y);
+	sprintf_s(buf, "Name:%s Lv:%d exp:%d \nHP:%d \nPos:%d, %d", avatar.name, avatar.m_level, avatar.m_exp, avatar.m_hp, avatar.m_x, avatar.m_y);
 
 	text.setString(buf);
 	chatting.draw_chat();
@@ -580,7 +582,7 @@ int main()
 						}
 						break;
 					case sf::Keyboard::Enter:
-						currentChat += L"ME: ";
+						currentChat += L"±ÙÃ³: ";
 						isStartChat = true;
 						break;
 					}

@@ -2,13 +2,13 @@
 C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(47,1): warning C4005: 'UNICODE': 매크로 재정의
 C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp : message : 'UNICODE'의 이전 정의를 참조하십시오.
 C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(579,50): warning C4244: '-=': 'double'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1360,11): warning C4101: 'szUser_name' :참조되지 않은 지역 변수입니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1408,11): warning C4101: 'szUser_name' :참조되지 않은 지역 변수입니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1501,72): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1501,62): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1501,51): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1501,39): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1501,27): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1394,11): warning C4101: 'szUser_name' :참조되지 않은 지역 변수입니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1442,11): warning C4101: 'szUser_name' :참조되지 않은 지역 변수입니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1535,72): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1535,62): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1535,51): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1535,39): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1535,27): warning C4244: '인수': 'SQLINTEGER'에서 'short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xstring(2388,23): warning C4244: '인수': '_Ty'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
@@ -54,13 +54,13 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
               _Iter=wchar_t *,
               _Alloc=std::allocator<char>
           ]
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1355): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1389): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
           with
           [
               _Elem=wchar_t,
               _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
           ]
-C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1355): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\IOCPGameServer\IOCPGameServer\IOCPServer.cpp(1389): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,void>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
           with
           [
               _Elem=wchar_t,

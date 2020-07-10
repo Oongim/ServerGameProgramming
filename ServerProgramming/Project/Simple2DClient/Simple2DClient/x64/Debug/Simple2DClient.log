@@ -1,3 +1,3 @@
 ﻿  2dClient.cpp
-c:\shieldman\servergameprogramming\serverprogramming\project\simple2dclient\simple2dclient\2dclient.cpp(108): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\shieldman\servergameprogramming\serverprogramming\project\simple2dclient\simple2dclient\2dclient.cpp(115): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Simple2DClient.vcxproj -> C:\ShieldMan\ServerGameProgramming\ServerProgramming\Project\Simple2DClient\x64\Debug\Simple2DClient.exe
